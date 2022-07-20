@@ -28,13 +28,12 @@ a {
     background: #161616;
     color: #fff;
     border-radius: 30px;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    align-items: end;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
 }
 .banner-content {
-    padding: 0px 85px;
-    margin: auto;
+    width: 40%;
 }
 .banner-content h1 {
     font-size: 70px;
@@ -58,10 +57,11 @@ a {
     margin-left: 10px;
 }
 .banner-photo {
-    width: 85%;
 }
 .banner-photo img {
-    width: 100%;
+    height: 600px;
+    position: relative;
+    top: 26px;
 }
 
 @keyframes effect {
@@ -230,6 +230,7 @@ footer {
 @media only screen and (max-width:699px) {
     
     .blog {
+        display: grid;
         grid-template-columns: repeat(1, 1fr);
         margin-top: 25px;
     }
@@ -244,15 +245,17 @@ footer {
     .banner {
         grid-template-columns: repeat(1, 1fr);
         height: auto;
+        flex-direction: column;
         justify-items: center;
-        align-items: center;
         margin-top: 0px;
         border-radius: 10px;
+        align-items: center;
     }
     .banner-content {
         padding: 0;
         text-align: center;
         padding: 25px;
+        width: auto;
     }
     .banner-content h1 {
         font-size: 22px;
@@ -266,11 +269,17 @@ footer {
     .banner-content a {
         font-size: 20px;
     }
+    .banner-photo img {
+        height: auto;
+        position: relative;
+        top: 7px;
+        left: 30px;
+        width: 85%;
+    }
     .text-hide {
         display: none;
     }
     .banner-photo {
-        width: 75%;
         margin-top: 20px;
     }
 
@@ -332,8 +341,8 @@ footer {
         height: 400px;
     }
     .banner-content {
-        padding: 0;
-        padding-left: 75px;
+        width: 75%;
+        padding: 0px 45px;
     }
     .banner-content h1 {
         font-size: 40px;
@@ -347,7 +356,12 @@ footer {
         font-size: 14px;
     }
     .banner-photo {
-        width: 90%;
+    
+    }
+    .banner-photo img {
+        height: 345px;
+        position: relative;
+        top: 31px;
     }
     .text-hide {
         display: none;
@@ -441,6 +455,7 @@ footer {
     .banner-content {
         padding: 0;
         padding: 0px 50px;
+        width: 65%;
     }
     .banner-content h1 {
         font-size: 40px;
@@ -454,7 +469,12 @@ footer {
         font-size: 14px;
     }
     .banner-photo {
-        width: 95%;
+        
+    }
+    .banner-photo img {
+        height: 555px;
+        position: relative;
+        top: 26px;
     }
     
     .banner-content a {
@@ -466,7 +486,7 @@ footer {
             
 
     .blogs {
-        /* grid-template-columns: repeat(1, 1fr); */
+        
     }
     .blog {
         grid-template-columns: repeat(2, 1fr);
