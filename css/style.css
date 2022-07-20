@@ -64,6 +64,7 @@ a {
     }
     100% {
         padding: 16px 25px;
+        
     }
 }
 
@@ -302,6 +303,7 @@ footer {
     }
     .banner-content a {
         font-size: 20px;
+        animation: none;
     }
     .banner-photo img {
         height: auto;
@@ -309,6 +311,7 @@ footer {
         top: 7px;
         left: 30px;
         width: 85%;
+        animation: none;
     }
     .text-hide {
         display: none;
@@ -357,6 +360,7 @@ footer {
 @media only screen and (max-width:260px) {
     .banner-content a {
         font-size: 16px;
+        animation: none;
     }
 }
 
@@ -396,12 +400,14 @@ footer {
         height: 345px;
         position: relative;
         top: 31px;
+        animation: none;
     }
     .text-hide {
         display: none;
     }
     .banner-content a {
         font-size: 20px;
+        animation: none;
     }
     footer {
         height: 345px;
