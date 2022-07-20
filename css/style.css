@@ -1,0 +1,497 @@
+/*------------------------------ 
+        Google Font
+------------------------------*/
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+
+
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+
+}
+.container {
+    width: 90%;
+    margin: auto;
+    margin-top: 50px;
+}
+a {
+    text-decoration: none;
+}
+
+/*------------------------------ 
+        Banner Style
+------------------------------*/
+
+.banner {
+    height: 646px;
+    background: #161616;
+    color: #fff;
+    border-radius: 30px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: end;
+}
+.banner-content {
+    padding: 0px 85px;
+    margin: auto;
+}
+.banner-content h1 {
+    font-size: 70px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    line-height: 80px;
+    margin-top: 0px;
+}
+.banner-content p {
+    margin-bottom: 50px;
+    line-height: 26px;
+}
+.banner-content a {
+    text-decoration: none;
+    padding: 16px 25px;
+    background: #DD0000;
+    color: #fff;
+    border-radius: 5px;
+}
+.arrow {
+    margin-left: 10px;
+}
+.banner-photo {
+    width: 85%;
+}
+.banner-photo img {
+    width: 100%;
+}
+
+@keyframes effect {
+    0% {
+
+    }
+    100% {
+
+    }
+}
+
+/*------------------------------ 
+            Blog Style
+------------------------------*/
+
+.blogs {
+    display: grid;
+    grid-template-columns: 312px auto;
+    column-gap: 24px;
+}
+.blog-button {
+    height: 282px;
+    border: 1px solid;
+    padding: 30px;
+    background: #161616;
+    border-radius: 10px;
+}
+.blog-button a {
+    display: block;
+    text-decoration: none;
+    color: #161616;
+    background: #fff;
+    padding: 22px;
+    text-align: center;
+    font-size: 20px;
+    border-radius: 10px;
+    font-weight: 600;
+    transition: .5s ease;
+}
+#active {
+    background: #DD0000;
+    color: #fff;
+}
+.blog-button a:focus {
+    background: #DD0000;
+    color: #fff;
+    transition: .5s ease;
+}
+.top-30 {
+    margin-top: 30px;
+}
+.blog {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 24px;
+    row-gap: 24px;
+}
+.blog article {
+    border: 1px solid #E8E8E8;
+    border-radius: 10px;
+}
+.thumbnail {}
+.thumbnail img {
+    width: 100%;
+}
+.blog-content {
+    padding: 20px;
+}
+.blog-content a {
+    padding: 5px 15px;
+    font-weight: 600;
+    border: 2px solid #161616;
+    color: #161616;
+    border-radius: 5px;
+}
+.blog-content h3 {
+    color: #161616;
+}
+.blog-object {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 65%;
+}
+.time, .comment {
+    display: flex;
+    align-items: center;
+}
+.time p, .comment p {
+    margin-left: 10px;
+    color: rgba(22, 22, 22, 0.7);
+    font-size: 18px;
+}
+.comment {}
+.fa-clock, .fa-comment-dots {
+    color: rgba(22, 22, 22, 0.8);
+    font-size: 25px;
+}
+
+/*------------------------------ 
+            Extra button 
+            For Tab Style
+------------------------------*/
+
+.tablet-button {
+    margin: auto;
+    text-align: center;
+    margin-top: 100px;
+    display: none;
+}
+.tablet-button a {
+    background: #DD0000;
+    border-radius: 5px;
+    padding: 12px 29px;
+    color: #fff;
+    font-size: 20px;
+}
+
+
+
+/*------------------------------ 
+            Footer Style
+------------------------------*/
+
+footer {
+    width: 100%;
+    height: 444px;
+    background: #161616;
+}
+.footer {
+    position: relative;
+    width: 90%;
+    margin: auto;
+    text-align: center;
+    top: 130px;
+}
+.footer h1 {
+    color: #fff;
+    margin-bottom: 50px;
+}
+.footer hr {
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+.policy {
+    width: 90%;
+    margin: auto;
+    color: #B9B9B9;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    margin-top: 40px;
+}
+.policy p {
+
+}
+.mobile-icon {
+    display: none;
+}
+
+
+/*------------------------------ 
+            Responsive
+            For Mobile
+------------------------------*/
+
+
+
+@media only screen and (max-width:699px) {
+    
+    .blog {
+        grid-template-columns: repeat(1, 1fr);
+        margin-top: 25px;
+    }
+    .blog-button {
+        background: #fff;
+        border: 1px solid #E8E8E8;
+    }
+    .blog-button a {
+        border: 2px solid #E8E8E8;
+    }
+
+    .banner {
+        grid-template-columns: repeat(1, 1fr);
+        height: auto;
+        justify-items: center;
+        align-items: center;
+        margin-top: 0px;
+        border-radius: 10px;
+    }
+    .banner-content {
+        padding: 0;
+        text-align: center;
+        padding: 25px;
+    }
+    .banner-content h1 {
+        font-size: 22px;
+        line-height: 33px;
+    }
+    .banner-content p {
+        color: rgba(255, 255, 255, 0.8);
+        font-size: 14px;
+
+    }
+    .banner-content a {
+        font-size: 20px;
+    }
+    .text-hide {
+        display: none;
+    }
+    .banner-photo {
+        width: 75%;
+        margin-top: 20px;
+    }
+
+    .blogs {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    footer {
+        height: auto;
+        margin-top: 25px;
+    }
+    .footer {
+        top: 0px;
+    }
+    .footer h1 {
+        margin: 0;
+        padding: 24px 0px;
+    }
+    .policy {
+        grid-template-columns: repeat(1, 1fr);
+        margin-top: 30px;
+    }
+    .mobile-icon {
+        display: block;
+    }
+    .social {
+        text-align: center;
+        padding: 30px 0px;
+    }
+    .social a {
+        color: #DD0000;
+        font-size: 35px;
+        display: inline-block;
+        padding: 0px 10px;
+    }
+    .social a i {}
+    
+}
+
+
+@media only screen and (max-width:260px) {
+    .banner-content a {
+        font-size: 16px;
+    }
+}
+
+
+
+/*------------------------------ 
+            Responsive
+            For tablet
+------------------------------*/
+
+@media only screen and (min-width:700px) and (max-width:1023px) {
+    
+
+
+    .banner {
+        height: 400px;
+    }
+    .banner-content {
+        padding: 0;
+        padding-left: 75px;
+    }
+    .banner-content h1 {
+        font-size: 40px;
+        font-weight: 700;
+        margin-bottom: 10px;
+        line-height: 50px;
+        margin-top: 0px;
+    }
+    .banner-content p {
+        margin-bottom: 30px;
+        font-size: 14px;
+    }
+    .banner-photo {
+        width: 90%;
+    }
+    .text-hide {
+        display: none;
+    }
+    .banner-content a {
+        font-size: 20px;
+    }
+    footer {
+        height: 345px;
+        margin-top: 100px;
+    }
+    .footer {
+        top: 70px;
+    }
+    .policy {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .policy p {
+        margin-left: 35px;
+    }
+    .mobile-icon {
+        display: none;
+    }
+
+/*--------------Blog----------------*/
+            
+
+    .blogs {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .blog {
+        grid-template-columns: repeat(2, 1fr);
+        margin-top: 30px;
+    }
+    
+    
+    article:nth-last-of-type(1) {
+        display: none;
+    }
+    article:nth-last-of-type(2) {
+        display: none;
+    }
+    article:nth-last-of-type(3) {
+        display: none;
+    }
+
+    .blog-button {
+        height: auto;
+        border: none;
+        padding: 0;
+        background: #fff;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        justify-items: center;
+        align-items: center;
+        column-gap: 22px;
+    }
+    .blog-button a {
+        margin: 0;
+        padding: 0;
+        padding: 20px 15px;
+        border: 1px solid;
+        border-radius: 10px;
+        border: 1px solid #E8E8E8;
+    }
+    .tablet-button {
+        display: block;
+    }
+    #active {
+        
+    }
+    
+
+}
+
+
+/*------------------------------ 
+            Responsive
+         For Small Laptop
+------------------------------*/
+
+@media only screen and (min-width:1024px) and (max-width:1280px) {
+    
+
+
+    .banner {
+        height: 600px;
+    }
+    .banner-content {
+        padding: 0;
+        padding: 0px 50px;
+    }
+    .banner-content h1 {
+        font-size: 40px;
+        font-weight: 700;
+        margin-bottom: 10px;
+        line-height: 50px;
+        margin-top: 0px;
+    }
+    .banner-content p {
+        margin-bottom: 30px;
+        font-size: 14px;
+    }
+    .banner-photo {
+        width: 95%;
+    }
+    
+    .banner-content a {
+        font-size: 20px;
+    }
+    
+
+/*--------------Blog----------------*/
+            
+
+    .blogs {
+        /* grid-template-columns: repeat(1, 1fr); */
+    }
+    .blog {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    #active {
+        
+    }
+
+    footer {
+        height: 345px;
+        margin-top: 100px;
+    }
+    .footer {
+        top: 70px;
+    }
+    .policy {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .policy p {
+        margin-left: 35px;
+    }
+    .mobile-icon {
+        display: none;
+    }
+
+}
